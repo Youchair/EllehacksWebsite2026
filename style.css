@@ -1,0 +1,272 @@
+:root {
+    --base-width: 1440px; /* to match ffigma artboard width */
+    --scale-factor: calc(100vw / var(--base-width));
+    --nav-height: 110px; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nobile', sans-serif;
+    background-color: #FFE2D5;
+    /* position: relative; */
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.scaling-wrapper {
+    position: relative;
+    width: var(--base-width);
+    min-height: calc(100vh - var(--nav-height));
+    transform-origin: top left;
+    transform: scale(var(--scale-factor));
+
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    /* background: #FFF9F6;
+    opacity: 0.63; */
+    background: rgba(255, 249, 246, 0.60);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 0 114px;
+    z-index: 100;
+
+}
+
+.nav-links {
+    display: flex;
+    /* gap: 60px; */
+    gap: min(4.16vw, 60px); /* 60px at 1440px */
+
+}
+
+.nav-links a {
+    font-size: min(1.52vw, 22px);
+    line-height: 25px;
+    color: #412200;
+    text-decoration: none;
+    font-weight: 500;
+    opacity: 1;
+}
+
+.logo {
+    /* position: absolute; */
+    width: min(5.94vw, 85.56px);
+    height: min(7.43vw, 107px);
+    left: 114px;
+    top: 2px;
+    background: url('images/logo 2.png') no-repeat;
+    background-size: contain;
+    opacity: 1;
+}
+
+.main-content {
+    position: relative;
+    width: 100%;
+    height: 100;
+    
+}
+
+/* Responsive absolute positioning */
+[class*="Balloon"],
+[class*="Cup"],
+.Candle,
+.cake,
+.cup-girl,
+.ellipse-6 {
+    position: absolute;
+    object-fit: contain;
+    pointer-events: none;
+    transform-origin: center;
+}
+
+.title {
+    position: absolute;
+    width: min(61.8vw, 890px);
+    font-weight: 700;
+    font-size: min(6.25vw, 90px);
+    line-height: 1.12;
+    color: #412200;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    left: min(13.33vw, 192px);
+    top: min(19.72vw, 284px);
+    z-index: 90;
+}
+
+.subtitle {
+    position: absolute;
+    width: min(44.44vw, 640px);
+    font-weight: 400;
+    font-size: min(1.73vw, 25px);
+    line-height: 1.12;
+    color: #412200;
+    left: min(13.33vw, 192px);
+    top: min(27.29vw, 393px);
+    z-index: 90;
+}
+
+.cta-button {
+    /* position: absolute;
+    width: 422px;
+    height: 54px;
+    left: 183px;
+    top: 451px;
+    background: #412200;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: absolute;
+    width: min(29.3vw, 422px);
+    height: min(3.75vw, 54px);
+    left: min(12.7vw, 183px);
+    top: min(31.31vw, 451px);
+    background: #412200;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+}
+
+.cta-text {
+    font-weight: 500;
+    /* font-size: 22px;
+    line-height: 25px; */
+    font-size: min(1.52vw, 22px);
+    line-height: min(1.73vw, 25px);
+    color: #FFFFFF;
+}
+
+/* Decorative elements */
+
+.Candle {
+    /* position: absolute;
+    width: 67px;
+    height: 182px;
+    left: 946px;
+    top: 506px;
+    object-fit: contain;
+    z-index: 2; */
+    width: min(4.65vw, 67px);
+    height: min(12.63vw, 182px);
+    left: min(65.69vw, 946px);
+    top: min(35.13vw, 506px);
+    z-index: 2;
+}
+
+.pinkBalloon {
+    /* position: absolute;
+    width: 206.83px;
+    height: 285.5px;
+    left: 94px;
+    top: 808px; */
+    width: min(14.36vw, 206.83px);
+    height: min(19.82vw, 285.5px);
+    left: min(6.52vw, 94px);
+    top: min(56.11vw, 808px);
+
+    object-fit: contain;
+    z-index: 2;
+}
+
+.greenBalloon {
+    /* position: absolute;
+    width: 168px;
+    height: 215px;
+    left: 1252.3px;
+    top: 483.75px; */
+
+    width: min(11.66vw, 168px);
+    height: min(14.92vw, 215px);
+    left: min(86.96vw, 1252.3px);
+    top: min(33.59vw, 483.75px);
+    object-fit: contain;
+    z-index: 1;
+}
+
+.cup-girl {
+    /* position: absolute;
+    width: 116px;
+    height: 113px;
+    left: 411px;
+    top: 564px; */
+    width: min(8.05vw, 116px);
+    height: min(7.84vw, 113px);
+    left: min(28.54vw, 411px);
+    top: min(39.16vw, 564px);
+    object-fit: contain;
+    z-index: 3;
+
+}
+
+.blueBalloon {
+    /* position: absolute;
+    width: 149.88px;
+    height: 180.72px;
+    left: 297px;
+    top: 897.56px; */
+
+    width: min(10.4vw, 149.88px);
+    height: min(12.55vw, 180.72px);
+    left: min(20.62vw, 297px);
+    top: min(62.33vw, 897.56px);
+    object-fit: contain;
+    z-index: 1;
+}
+
+.coffeeCup {
+    /* position: absolute;
+    width: 217px;
+    height: 235px;
+    left: 363px;
+    top: 644px; */
+    width: min(15.06vw, 217px);
+    height: min(16.31vw, 235px);
+    left: min(25.2vw, 363px);
+    top: min(44.72vw, 644px);
+    object-fit: contain;
+    z-index: 2;
+}
+
+.cake {
+    /* position: absolute;
+    width: 760px;
+    height: 485px;
+    left: 588px;
+    top: 483px; */
+    width: min(52.77vw, 760px);
+    height: min(33.68vw, 485px);
+    left: min(40.83vw, 588px);
+    top: min(33.54vw, 483px);
+    object-fit: contain;
+    z-index: 1;
+}
+
+.ellipse-6 {
+    /* position: absolute;
+    width: 1495px;
+    height: 701px;
+    left: -21px;
+    top: 635px; */
+    width: min(103.81vw, 1495px);
+    height: min(48.68vw, 701px);
+    left: min(-1.45vw, -21px);
+    top: min(44.09vw, 635px);
+
+    background: #D1A996;
+    border-radius: 50%;
+    object-fit: contain;
+    z-index: 0;
+}
