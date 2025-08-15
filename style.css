@@ -152,17 +152,17 @@ body {
 /* Decorative elements */
 
 .Candle {
-    /* position: absolute;
-    width: 67px;
-    height: 182px;
-    left: 946px;
-    top: 506px;
-    object-fit: contain;
-    z-index: 2; */
-    width: min(4.65vw, 67px);
-    height: min(12.63vw, 182px);
-    left: min(65.69vw, 946px);
+    /* width: min(8vw, 115px);   Increased from 4.65vw → 8vw */
+    /* height: min(20vw, 300px); Increased from 12.63vw → 20vw */
+    /* left: min(65.69vw, 946px);
     top: min(35.13vw, 506px);
+    z-index: 2; */
+    width: 18vw;
+    height: 30vw;
+    left: 60vw;
+    top: 23vw;
+    position: absolute;
+    object-fit: contain;
     z-index: 2;
 }
 
@@ -172,10 +172,15 @@ body {
     height: 285.5px;
     left: 94px;
     top: 808px; */
-    width: min(14.36vw, 206.83px);
+    /* width: min(14.36vw, 206.83px);
     height: min(19.82vw, 285.5px);
     left: min(6.52vw, 94px);
-    top: min(56.11vw, 808px);
+    top: min(56.11vw, 808px); */
+     width: 23vw;
+    height: 30vw;
+    /* left: 1vw; */
+    right: 80vw;
+    bottom: 90;
 
     object-fit: contain;
     z-index: 2;
@@ -188,10 +193,16 @@ body {
     left: 1252.3px;
     top: 483.75px; */
 
-    width: min(11.66vw, 168px);
+    /* width: min(11.66vw, 168px);
     height: min(14.92vw, 215px);
     left: min(86.96vw, 1252.3px);
     top: min(33.59vw, 483.75px);
+    object-fit: contain;
+    z-index: 1; */
+    width: 22vw;
+    height: 48vw;
+    left: 80vw;
+    top: 10vw;
     object-fit: contain;
     z-index: 1;
 }
@@ -218,10 +229,14 @@ body {
     left: 297px;
     top: 897.56px; */
 
-    width: min(10.4vw, 149.88px);
+    /* width: min(10.4vw, 149.88px);
     height: min(12.55vw, 180.72px);
     left: min(20.62vw, 297px);
-    top: min(62.33vw, 897.56px);
+    top: min(62.33vw, 897.56px); */
+     width: 35vw;
+    height: 45vw;
+    right: 70vw;
+    top:58vw;
     object-fit: contain;
     z-index: 1;
 }
@@ -246,12 +261,20 @@ body {
     height: 485px;
     left: 588px;
     top: 483px; */
-    width: min(52.77vw, 760px);
+    /* width: min(52.77vw, 760px);
     height: min(33.68vw, 485px);
     left: min(40.83vw, 588px);
     top: min(33.54vw, 483px);
+    object-fit: contain; */
+    /* z-index: 1; */
+    width: 52.78vw;
+    height: 33.68vw;
+    left: 40.83vw;
+    top: 33.54vw;
+    position: absolute;
     object-fit: contain;
     z-index: 1;
+
 }
 
 .ellipse-6 {
