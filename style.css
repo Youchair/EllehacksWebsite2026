@@ -1,5 +1,5 @@
 :root {
-    --base-width: 1440px; /* to match ffigma artboard width */
+    --base-width: 1440px; /* to match figma artboard width */
     --scale-factor: calc(100vw / var(--base-width));
     --nav-height: 110px; 
 }
@@ -13,7 +13,6 @@
 body {
     font-family: 'Nobile', sans-serif;
     background-color: #FFE2D5;
-    /* position: relative; */
     overflow-x: hidden;
     min-height: 100vh;
 }
@@ -21,33 +20,27 @@ body {
 .scaling-wrapper {
     position: relative;
     width: var(--base-width);
-    min-height: calc(100vh - var(--nav-height));
+    /* min-height: calc(100vh - var(--nav-height)); */
     transform-origin: top left;
     transform: scale(var(--scale-factor));
-
 }
 
 .navbar {
     position: fixed;
     width: 100%;
     height: 110px;
-    /* background: #FFF9F6;
-    opacity: 0.63; */
     background: rgba(255, 249, 246, 0.63);
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: space-between;
-    /* justify-content: center; */
     align-items: center;
     padding: 0 114px;
     z-index: 100;
-
 }
 
 .nav-links {
     display: flex;
-    /* gap: 60px; */
-    gap: min(4.16vw, 60px); /* 60px at 1440px */
+    gap: min(4.16vw, 60px); 
 
 }
 
@@ -61,7 +54,6 @@ body {
 }
 
 .logo {
-    /* position: absolute; */
     width: min(5.94vw, 85.56px);
     height: min(7.43vw, 107px);
     left: 114px;
@@ -74,8 +66,7 @@ body {
 .main-content {
     position: relative;
     width: 100%;
-    height: 100;
-    
+    height: 100%;
 }
 
 /* Responsive absolute positioning */
@@ -93,45 +84,35 @@ body {
 
 .title {
     position: absolute;
-    width: min(61.8vw, 890px);
+    width: 61.8vw;
     font-weight: 700;
-    font-size: min(6.25vw, 90px);
+    font-size: 6.25vw;
     line-height: 1.12;
     color: #412200;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    left: min(13.33vw, 192px);
-    top: min(19.72vw, 284px);
+    left: 13.33vw;
+    top: 19.72vw;
     z-index: 90;
 }
 
 .subtitle {
     position: absolute;
-    width: min(44.44vw, 640px);
+    width: 44.44vw;
     font-weight: 400;
-    font-size: min(1.73vw, 25px);
+    font-size: 1.73vw;
     line-height: 1.12;
     color: #412200;
-    left: min(13.33vw, 192px);
-    top: min(27.29vw, 393px);
+    left: 13.3vw;
+    top: 27.29vw;
     z-index: 90;
 }
 
 .cta-button {
-    /* position: absolute;
-    width: 422px;
-    height: 54px;
-    left: 183px;
-    top: 451px;
-    background: #412200;
-    border-radius: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
     position: absolute;
-    width: min(29.3vw, 422px);
-    height: min(3.75vw, 54px);
-    left: min(12.7vw, 183px);
-    top: min(31.31vw, 451px);
+    width: 29.3vw;
+    height: 3.75vw;
+    left: 13.3vw;
+    top: 31.31vw;
     background: #412200;
     border-radius: 200px;
     display: flex;
@@ -142,152 +123,100 @@ body {
 
 .cta-text {
     font-weight: 500;
-    /* font-size: 22px;
-    line-height: 25px; */
-    font-size: min(1.52vw, 22px);
-    line-height: min(1.73vw, 25px);
+    font-size: 1.52vw;
+    line-height: 1.73vw;
     color: #FFFFFF;
 }
 
 /* Decorative elements */
-
 .Candle {
-    /* width: min(8vw, 115px);   Increased from 4.65vw → 8vw */
-    /* height: min(20vw, 300px); Increased from 12.63vw → 20vw */
-    /* left: min(65.69vw, 946px);
-    top: min(35.13vw, 506px);
-    z-index: 2; */
     width: 18vw;
     height: 30vw;
-    left: 60vw;
-    top: 23vw;
+    left: 59vw;
+    top: 26.45vw;
     position: absolute;
     object-fit: contain;
     z-index: 2;
 }
 
-.pinkBalloon {
-    /* position: absolute;
-    width: 206.83px;
-    height: 285.5px;
-    left: 94px;
-    top: 808px; */
-    /* width: min(14.36vw, 206.83px);
-    height: min(19.82vw, 285.5px);
-    left: min(6.52vw, 94px);
-    top: min(56.11vw, 808px); */
-     width: 23vw;
-    height: 30vw;
-    /* left: 1vw; */
-    right: 80vw;
-    bottom: 90;
-
+.yellowBalloon {
+    position: absolute;
+    width: 25vw;
+    height: 33vw;
+    left: -4vw;
+    top: 0vw;
     object-fit: contain;
-    z-index: 2;
+    z-index: 1;
 }
 
-.greenBalloon {
-    /* position: absolute;
-    width: 168px;
-    height: 215px;
-    left: 1252.3px;
-    top: 483.75px; */
-
-    /* width: min(11.66vw, 168px);
-    height: min(14.92vw, 215px);
-    left: min(86.96vw, 1252.3px);
-    top: min(33.59vw, 483.75px);
-    object-fit: contain;
-    z-index: 1; */
+.rightBalloon {
+    position: absolute;
     width: 22vw;
     height: 48vw;
     left: 80vw;
-    top: 10vw;
+    top: 6vw;
     object-fit: contain;
     z-index: 1;
 }
 
 .cup-girl {
-    /* position: absolute;
-    width: 116px;
-    height: 113px;
-    left: 411px;
-    top: 564px; */
-    width: min(8.05vw, 116px);
-    height: min(7.84vw, 113px);
-    left: min(28.54vw, 411px);
-    top: min(39.16vw, 564px);
+    position: absolute;
+    width: 8vw;
+    height: 13vw;
+    left: 29vw;
+    top: 36.15vw; 
     object-fit: contain;
-    z-index: 3;
-
+    z-index: 2;
 }
 
-.blueBalloon {
-    /* position: absolute;
-    width: 149.88px;
-    height: 180.72px;
-    left: 297px;
-    top: 897.56px; */
-
-    /* width: min(10.4vw, 149.88px);
-    height: min(12.55vw, 180.72px);
-    left: min(20.62vw, 297px);
-    top: min(62.33vw, 897.56px); */
-     width: 35vw;
-    height: 45vw;
-    right: 70vw;
-    top:58vw;
+.leftmultipleBalloons {
+    width: 45vw;
+    height: 55vw;
+    right: 62vw;
+    top: 42vw;
+    position: absolute;
     object-fit: contain;
     z-index: 1;
 }
 
 .coffeeCup {
-    /* position: absolute;
-    width: 217px;
-    height: 235px;
-    left: 363px;
-    top: 644px; */
-    width: min(15.06vw, 217px);
-    height: min(16.31vw, 235px);
-    left: min(25.2vw, 363px);
-    top: min(44.72vw, 644px);
+    width: 16vw;
+    height: 21vw;
+    left: 24.5vw;
+    top: 43vw;
     object-fit: contain;
-    z-index: 2;
+    z-index: 1;
 }
 
 .cake {
-    /* position: absolute;
-    width: 760px;
-    height: 485px;
-    left: 588px;
-    top: 483px; */
-    /* width: min(52.77vw, 760px);
-    height: min(33.68vw, 485px);
-    left: min(40.83vw, 588px);
-    top: min(33.54vw, 483px);
-    object-fit: contain; */
-    /* z-index: 1; */
-    width: 52.78vw;
-    height: 33.68vw;
-    left: 40.83vw;
+    width: 60vw;
+    height: 40vw;
+    left: 36vw;
     top: 33.54vw;
     position: absolute;
     object-fit: contain;
     z-index: 1;
-
 }
 
-.ellipse-6 {
-    /* position: absolute;
-    width: 1495px;
-    height: 701px;
-    left: -21px;
-    top: 635px; */
-    width: min(103.81vw, 1495px);
-    height: min(48.68vw, 701px);
-    left: min(-1.45vw, -21px);
-    top: min(44.09vw, 635px);
+.gradient {
+    position: absolute;
+    top: 9vw;
+    left: 0vw;
+    width: 100%;  
+    min-height: 40vw;
+    object-fit: contain; 
+    opacity: 0.73;
+    mix-blend-mode: overlay; 
+    pointer-events: none;
+    z-index: 5;
+}
 
+.table{
+    position: absolute;
+    width: 110vw;
+    height: 55vw;
+    left: -4vw;
+    top: 45vw; 
     background: #D1A996;
     border-radius: 50%;
     object-fit: contain;
