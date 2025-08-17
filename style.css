@@ -164,7 +164,7 @@ body {
     width: 8vw;
     height: 13vw;
     left: 29vw;
-    top: 36.15vw; 
+    top: 36.12vw; 
     object-fit: contain;
     z-index: 2;
 }
@@ -200,10 +200,10 @@ body {
 
 .gradient {
     position: absolute;
-    top: 9vw;
+    top: 0vw;
     left: 0vw;
-    width: 100%;  
-    min-height: 40vw;
+    width: 114%;  
+    min-height: 50vw;
     object-fit: contain; 
     opacity: 0.73;
     mix-blend-mode: overlay; 
