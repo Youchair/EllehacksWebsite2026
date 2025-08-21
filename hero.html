@@ -11,6 +11,11 @@
 <body>
    <nav class="navbar">
       <div class="logo"></div>
+      <div class="hamburger">
+         <span></span>
+         <span></span>
+         <span></span>
+      </div>
       <div class="nav-links">
          <a href="#">Home</a>
          <a href="#">About Us</a>
@@ -48,9 +53,21 @@
          <img src="images/Rectangle.png" alt="gradient" class="gradient" draggable="false"
      oncontextmenu="return false">
          <div class="table"></div>
+         <div class="MLHlogo">
+        <a id="mlh-trust-badge" 
+        href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=black" target="_blank">
+        <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-white.svg" alt="Major League Hacking 2026 Hackathon Season" style="width:100%" draggable="false">
+        </a>
+      </div>
       </div>
 
    </div>
+
+   <script>
+      document.querySelector('.hamburger').addEventListener('click', function() {
+         document.querySelector('.nav-links').classList.toggle('active');
+      });
+   </script>
 
    
 </body>
