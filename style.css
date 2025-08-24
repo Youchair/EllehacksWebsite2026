@@ -279,7 +279,7 @@ body {
         top: 100%;
         left: 0;
         right: 0;
-        background: rgba(255, 249, 246, 0.85);
+        background: rgba(255, 249, 246, 0.90);
         flex-direction: column; /* Stack links vertically */
         align-items: center;
         padding: 20px;
@@ -303,21 +303,21 @@ body {
         width: 80vw;
         font-size: 8vw;
         left: 10vw;
-        top: 15vw;
+        top: 39vw;
     }
 
     .subtitle {
-        width: 80vw;
+        width: 60vw;
         font-size: 3vw;
         left: 10vw;
-        top: 25vw;
+        top: 49vw;
     }
 
     .cta-button {
         width: 50vw;
         height: 6vw;
         left: 10vw;
-        top: 32vw;
+        top: 57.5vw;
     }
 
     .cta-text {
@@ -325,5 +325,100 @@ body {
         line-height: 3.5vw;
     }
 
+    /* Decorative elements */
+    .Candle {
+        width: 18vw;
+        height: 20vw;
+        left: 59.2vw;
+        top: 65.5vw;
+        position: absolute;
+        object-fit: contain;
+        z-index: 2;
+    }
+
+    .yellowBalloon {
+        position: absolute;
+        width: 25vw;
+        height: 33vw;
+        left: 0vw;
+        top: 7vw;
+        object-fit: contain;
+        z-index: 1;
+    }
+
+    .rightBalloon {
+        position: absolute;
+        width: 22vw;
+        height: 48vw;
+        left: 75vw;
+        top: 25vw;
+        object-fit: contain;
+        z-index: 1;
+    }
+
+    .cup-girl {
+        position: absolute;
+        width: 8vw;
+        height: 13vw;
+        left: 29vw;
+        top: 71.12vw; 
+        object-fit: contain;
+        z-index: 2;
+    }
+
+    .leftmultipleBalloons {
+        width: 45vw;
+        height: 55vw;
+        right: 62vw;
+        top: 77vw;
+        position: absolute;
+        object-fit: contain;
+        z-index: 1;
+    }
+
+
+    .coffeeCup {
+        width: 16vw;
+        height: 21vw;
+        left: 24.5vw;
+        top: 78vw;
+        object-fit: contain;
+        z-index: 1;
+    }
+
+    .cake {
+        width: 60vw;
+        height: 40vw;
+        left: 36vw;
+        top: 68.54vw;
+        position: absolute;
+        object-fit: contain;
+        z-index: 1;
+    }
+
+    .gradient {
+        position: absolute;
+        top: -13vw;
+        left: 0vw;
+        width: 155%;  
+        min-height: 143vw;
+        object-fit: contain; 
+        opacity: 0.73;
+        mix-blend-mode: overlay; 
+        pointer-events: none;
+        z-index: 5;
+    }
+
+    .table{
+        position: absolute;
+        width: 110vw;
+        height: 55vw;
+        left: -4vw;
+        top: 80vw; 
+        background: #D1A996;
+        border-radius: 50%;
+        object-fit: contain;
+        z-index: 0;
+    }
 
 }
